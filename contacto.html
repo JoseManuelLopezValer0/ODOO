@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="author" content="López">
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    <title>OfiCompTech</title>
+</head>
+<body>
+    <header>
+        <h1>OfiCompTech</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>
+                Puede contactar con nosotros a través de los siguientes medios:
+            </p>
+            <ul>
+                <li>Teléfono: 123 456 789</li>
+                <li>Correo electrónico: OfiCompTech@mail.com </li>
+                <li>Formulario de contacto:</li>
+            </ul>
+            <form action="contacto.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="asunto" id="asunto" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>OfiCompTech &copy; 2021</p>
+    </footer>
+</body>
+</html>
